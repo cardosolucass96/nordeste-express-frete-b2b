@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Shield, Zap, MapPin, Headphones, FileText, TrendingDown } from 'lucide-react';
+import { Shield, Zap, MapPin, Headphones, FileText, TrendingDown, Truck } from 'lucide-react';
 
 const Benefits = () => {
   const benefits = [
