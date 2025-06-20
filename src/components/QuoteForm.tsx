@@ -34,7 +34,7 @@ const QuoteForm = () => {
     
     // Simular envio ao CRM
     setTimeout(() => {
-      console.log('Dados enviados:', formData);
+      console.log('Dados enviados para o CRM:', formData);
       toast({
         title: "Cotação enviada com sucesso!",
         description: "Entraremos em contato em até 2 horas. Verifique seu WhatsApp e email.",
@@ -58,7 +58,7 @@ const QuoteForm = () => {
   };
 
   return (
-    <section id="cotacao" className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700">
+    <section id="cotacao" className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-red-600">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -73,15 +73,15 @@ const QuoteForm = () => {
             {/* Benefits Row */}
             <div className="flex flex-wrap justify-center gap-6 mb-8">
               <div className="flex items-center text-blue-100">
-                <Clock className="w-5 h-5 mr-2 text-orange-400" />
+                <Clock className="w-5 h-5 mr-2 text-red-400" />
                 <span>Resposta em 2h</span>
               </div>
               <div className="flex items-center text-blue-100">
-                <Shield className="w-5 h-5 mr-2 text-orange-400" />
+                <Shield className="w-5 h-5 mr-2 text-red-400" />
                 <span>Seguro Incluso</span>
               </div>
               <div className="flex items-center text-blue-100">
-                <Truck className="w-5 h-5 mr-2 text-orange-400" />
+                <Truck className="w-5 h-5 mr-2 text-red-400" />
                 <span>Frota Própria</span>
               </div>
             </div>
@@ -93,31 +93,31 @@ const QuoteForm = () => {
               {/* Company Info */}
               <div className="border-b pb-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-2 text-blue-600" />
+                  <CheckCircle className="w-5 h-5 mr-2 text-red-600" />
                   Dados da Empresa
                 </h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <Label htmlFor="empresa">Razão Social / Nome da Empresa *</Label>
+                    <Label htmlFor="empresa" className="text-gray-700">Razão Social / Nome da Empresa *</Label>
                     <Input
                       id="empresa"
                       type="text"
                       value={formData.empresa}
                       onChange={(e) => handleInputChange('empresa', e.target.value)}
                       required
-                      className="mt-1"
+                      className="mt-1 border-gray-300 focus:border-red-500 focus:ring-red-500"
                       placeholder="Ex: Distribuidora ABC Ltda"
                     />
                   </div>
                   <div>
-                    <Label htmlFor="cnpj">CNPJ *</Label>
+                    <Label htmlFor="cnpj" className="text-gray-700">CNPJ *</Label>
                     <Input
                       id="cnpj"
                       type="text"
                       value={formData.cnpj}
                       onChange={(e) => handleInputChange('cnpj', e.target.value)}
                       required
-                      className="mt-1"
+                      className="mt-1 border-gray-300 focus:border-red-500 focus:ring-red-500"
                       placeholder="00.000.000/0000-00"
                     />
                   </div>
@@ -127,43 +127,43 @@ const QuoteForm = () => {
               {/* Contact Info */}
               <div className="border-b pb-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-2 text-blue-600" />
+                  <CheckCircle className="w-5 h-5 mr-2 text-red-600" />
                   Dados de Contato
                 </h3>
                 <div className="grid md:grid-cols-3 gap-4">
                   <div>
-                    <Label htmlFor="contato">Nome do Responsável *</Label>
+                    <Label htmlFor="contato" className="text-gray-700">Nome do Responsável *</Label>
                     <Input
                       id="contato"
                       type="text"
                       value={formData.contato}
                       onChange={(e) => handleInputChange('contato', e.target.value)}
                       required
-                      className="mt-1"
+                      className="mt-1 border-gray-300 focus:border-red-500 focus:ring-red-500"
                       placeholder="Seu nome completo"
                     />
                   </div>
                   <div>
-                    <Label htmlFor="telefone">Telefone / WhatsApp *</Label>
+                    <Label htmlFor="telefone" className="text-gray-700">Telefone / WhatsApp *</Label>
                     <Input
                       id="telefone"
                       type="tel"
                       value={formData.telefone}
                       onChange={(e) => handleInputChange('telefone', e.target.value)}
                       required
-                      className="mt-1"
+                      className="mt-1 border-gray-300 focus:border-red-500 focus:ring-red-500"
                       placeholder="(11) 99999-9999"
                     />
                   </div>
                   <div>
-                    <Label htmlFor="email">E-mail Corporativo *</Label>
+                    <Label htmlFor="email" className="text-gray-700">E-mail Corporativo *</Label>
                     <Input
                       id="email"
                       type="email"
                       value={formData.email}
                       onChange={(e) => handleInputChange('email', e.target.value)}
                       required
-                      className="mt-1"
+                      className="mt-1 border-gray-300 focus:border-red-500 focus:ring-red-500"
                       placeholder="seuemail@empresa.com"
                     />
                   </div>
@@ -173,31 +173,31 @@ const QuoteForm = () => {
               {/* Shipping Details */}
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
-                  <Truck className="w-5 h-5 mr-2 text-blue-600" />
+                  <Truck className="w-5 h-5 mr-2 text-red-600" />
                   Detalhes do Frete
                 </h3>
                 <div className="grid md:grid-cols-2 gap-4 mb-4">
                   <div>
-                    <Label htmlFor="origem">Origem da Carga *</Label>
+                    <Label htmlFor="origem" className="text-gray-700">Origem da Carga *</Label>
                     <Input
                       id="origem"
                       type="text"
                       value={formData.origem}
                       onChange={(e) => handleInputChange('origem', e.target.value)}
                       required
-                      className="mt-1"
+                      className="mt-1 border-gray-300 focus:border-red-500 focus:ring-red-500"
                       placeholder="Ex: São Paulo, SP"
                     />
                   </div>
                   <div>
-                    <Label htmlFor="destino">Destino da Carga *</Label>
+                    <Label htmlFor="destino" className="text-gray-700">Destino da Carga *</Label>
                     <Input
                       id="destino"
                       type="text"
                       value={formData.destino}
                       onChange={(e) => handleInputChange('destino', e.target.value)}
                       required
-                      className="mt-1"
+                      className="mt-1 border-gray-300 focus:border-red-500 focus:ring-red-500"
                       placeholder="Ex: Recife, PE"
                     />
                   </div>
@@ -205,9 +205,9 @@ const QuoteForm = () => {
                 
                 <div className="grid md:grid-cols-2 gap-4 mb-4">
                   <div>
-                    <Label htmlFor="tipo">Tipo de Transporte *</Label>
+                    <Label htmlFor="tipo" className="text-gray-700">Tipo de Transporte *</Label>
                     <Select onValueChange={(value) => handleInputChange('tipo', value)}>
-                      <SelectTrigger className="mt-1">
+                      <SelectTrigger className="mt-1 border-gray-300 focus:border-red-500 focus:ring-red-500">
                         <SelectValue placeholder="Selecione o tipo" />
                       </SelectTrigger>
                       <SelectContent>
@@ -218,25 +218,25 @@ const QuoteForm = () => {
                     </Select>
                   </div>
                   <div>
-                    <Label htmlFor="volume">Volume/Peso Aproximado</Label>
+                    <Label htmlFor="volume" className="text-gray-700">Volume/Peso Aproximado</Label>
                     <Input
                       id="volume"
                       type="text"
                       value={formData.volume}
                       onChange={(e) => handleInputChange('volume', e.target.value)}
-                      className="mt-1"
+                      className="mt-1 border-gray-300 focus:border-red-500 focus:ring-red-500"
                       placeholder="Ex: 4 m³ ou 600 kg"
                     />
                   </div>
                 </div>
                 
                 <div>
-                  <Label htmlFor="observacoes">Observações Adicionais</Label>
+                  <Label htmlFor="observacoes" className="text-gray-700">Observações Adicionais</Label>
                   <Textarea
                     id="observacoes"
                     value={formData.observacoes}
                     onChange={(e) => handleInputChange('observacoes', e.target.value)}
-                    className="mt-1"
+                    className="mt-1 border-gray-300 focus:border-red-500 focus:ring-red-500"
                     placeholder="Informe detalhes sobre sua carga, urgência, frequência de envio, etc."
                     rows={3}
                   />
@@ -248,7 +248,7 @@ const QuoteForm = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-orange-500 hover:bg-orange-600 text-white py-4 text-lg font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200"
+                  className="w-full bg-red-600 hover:bg-red-700 text-white py-4 text-lg font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200"
                   size="lg"
                 >
                   {isSubmitting ? (
@@ -278,7 +278,7 @@ const QuoteForm = () => {
               className="border-2 border-white/30 text-white hover:bg-white/10"
               size="lg"
             >
-              (11) 99999-9999
+              (81) 99640-5005
             </Button>
           </div>
         </div>
