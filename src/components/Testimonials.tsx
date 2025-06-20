@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Star, Quote } from 'lucide-react';
 
@@ -8,7 +7,7 @@ const Testimonials = () => {
       name: "Carlos Silva",
       role: "Gerente de Logística",
       company: "TechDistrib Ltda",
-      content: "A Vem Transport revolucionou nossa operação. Conseguimos reduzir 35% dos custos de frete e ainda ganhamos previsibilidade nas entregas. O rastreamento em tempo real nos dá total controle.",
+      content: "A Vem Transportadora revolucionou nossa operação. Conseguimos reduzir 35% dos custos de frete e ainda ganhamos previsibilidade nas entregas. O rastreamento em tempo real nos dá total controle.",
       rating: 5,
       savings: "35% de economia"
     },
@@ -24,7 +23,7 @@ const Testimonials = () => {
       name: "Roberto Santos",
       role: "Proprietário",
       company: "Santos & Filhos ME",
-      content: "Como empresa familiar, precisávamos de um parceiro que entendesse nossas necessidades. A Vem Transport não é só uma transportadora, é uma parceira de negócios que cresce conosco.",
+      content: "Como empresa familiar, precisávamos de um parceiro que entendesse nossas necessidades. A Vem Transportadora não é só uma transportadora, é uma parceira de negócios que cresce conosco.",
       rating: 5,
       highlight: "Parceria de crescimento"
     }
@@ -38,7 +37,7 @@ const Testimonials = () => {
             O que Nossos Clientes Dizem
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Mais de 500 empresas já confiam na Vem Transport para suas operações logísticas
+            Mais de 500 empresas já confiam na Vem Transportadora para suas operações logísticas
           </p>
         </div>
         
