@@ -14,13 +14,13 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
             <img 
               src="/lovable-uploads/668d55cf-f8a2-49fc-ac20-6f16c6e0d22f.png" 
               alt="Vem Transportadora" 
-              className="h-10 w-auto"
+              className="h-16 w-auto"
             />
           </div>
 

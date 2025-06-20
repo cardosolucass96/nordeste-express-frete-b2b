@@ -41,33 +41,23 @@ const AboutUs = () => {
 
         {/* Company Description */}
         <div className="bg-white rounded-2xl p-8 mb-16 shadow-lg">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Nossa Missão
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Nosso compromisso vai além da logística. Somos uma empresa guiada por valores cristãos, 
-                conduzindo nossos negócios com integridade, honestidade e respeito mútuo. Nossa missão 
-                é oferecer soluções logísticas eficientes, com excelência e responsabilidade, sempre 
-                priorizando a satisfação de nossos clientes e parceiros.
-              </p>
-              <div className="flex items-center space-x-4">
-                <div className="bg-red-100 p-3 rounded-full">
-                  <Award className="w-6 h-6 text-red-600" />
-                </div>
-                <div>
-                  <div className="font-semibold text-gray-900">10+ Anos de Experiência</div>
-                  <div className="text-sm text-gray-600">Conectando Sudeste ao Nordeste</div>
-                </div>
+          <div className="text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              Nossa Missão
+            </h3>
+            <p className="text-gray-600 mb-6 max-w-3xl mx-auto">
+              Nossa missão é oferecer soluções logísticas eficientes, com excelência e responsabilidade, 
+              sempre priorizando a satisfação de nossos clientes e parceiros. Conduzimos nossos negócios 
+              com integridade, honestidade e respeito mútuo.
+            </p>
+            <div className="flex items-center justify-center space-x-4">
+              <div className="bg-red-100 p-3 rounded-full">
+                <Award className="w-6 h-6 text-red-600" />
               </div>
-            </div>
-            <div className="relative">
-              <img 
-                src="/lovable-uploads/ed202e85-fff1-4f08-af30-a8a1e6cb328f.png" 
-                alt="Frota Vem Transportadora" 
-                className="rounded-lg shadow-lg w-full"
-              />
+              <div>
+                <div className="font-semibold text-gray-900">10+ Anos de Experiência</div>
+                <div className="text-sm text-gray-600">Conectando Sudeste ao Nordeste</div>
+              </div>
             </div>
           </div>
         </div>
