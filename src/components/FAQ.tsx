@@ -6,35 +6,35 @@ const FAQ = () => {
   const faqs = [
     {
       question: "Quais são os prazos de entrega?",
-      answer: "Para carga fracionada: 3 a 5 dias úteis. Para carga lotação: 2 a 3 dias úteis. Os prazos podem variar conforme a distância e condições climáticas, mas sempre informamos o prazo exato na cotação."
+      answer: "Variam conforme origem, destino e modalidade (fracionada ou dedicada). Coletas semanais saindo de SP p/ PE e demais capitais nordestinas. Consulte nosso time comercial ou rastreie sua carga para o prazo exato."
     },
     {
       question: "Como funciona o seguro da carga?",
-      answer: "Todas as cargas são automaticamente cobertas pelo nosso seguro. Cobrimos até R$ 50.000 para carga fracionada e até R$ 200.000 para lotação. Para valores superiores, oferecemos seguro adicional com custo baixo."
+      answer: "Seguro obrigatório RCTR-C incluso (acidentes) e cobertura adicional RCF-DC contra roubo, conforme perfil da carga. Valor pode ser embutido no frete via ad valorem."
     },
     {
       question: "Posso rastrear minha carga em tempo real?",
-      answer: "Sim! Assim que sua carga sair para entrega, você recebe um link de rastreamento por WhatsApp e email. Nosso sistema mostra a localização em tempo real e horário previsto de entrega."
+      answer: "Sim — updates automáticos do carregamento à entrega. Solicite acesso ao nosso painel ou acompanhe via equipe de atendimento."
     },
     {
       question: "Qual o limite de peso e volume para carga fracionada?",
-      answer: "Para fracionada: até 1.000 kg ou 15m³ por envio. Acima disso, recomendamos carga lotação que oferece melhor custo-benefício e maior segurança."
+      answer: "Depende do produto, embalagem e roteirização. Podemos ofertar solução dedicada para volumes/pesos acima do padrão. Fale conosco para avaliar."
     },
     {
       question: "Fazem coleta em qualquer local de São Paulo?",
-      answer: "Coletamos em toda Grande São Paulo sem custo adicional. Para interior de SP, consulte taxa de coleta. Agendamento flexível de segunda a sábado."
+      answer: "Sim, cobrimos toda a Grande São Paulo e regiões próximas mediante agendamento."
     },
     {
       question: "Como funciona o pagamento?",
-      answer: "Aceitamos pagamento à vista (PIX/boleto) com desconto, no cartão de crédito ou faturado para empresas aprovadas. Emitimos CTe e NFS-e para todas as operações."
+      answer: "Boleto ou transferência. Clientes com cadastro aprovado possuem condições e prazos diferenciados."
     },
     {
       question: "Transportam produtos perigosos ou frágeis?",
-      answer: "Sim, temos autorização para produtos perigosos (ANTT) e equipe especializada para cargas frágeis. Consulte nossa equipe para produtos específicos como eletrônicos, vidros, químicos, etc."
+      answer: "Sim. Exigimos documentação ANTT para cargas perigosas (ficha de emergência e rótulo) e embalagem adequada para itens frágeis."
     },
     {
       question: "Oferecem desconto para cargas frequentes?",
-      answer: "Sim! Empresas com envios regulares (semanal/mensal) têm condições especiais. Quanto maior a frequência, melhor o preço. Fale conosco para um plano personalizado."
+      answer: "Sim. Volumes recorrentes têm condições comerciais especiais — solicite uma proposta personalizada."
     }
   ];
 
@@ -42,7 +42,7 @@ const FAQ = () => {
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#003B5C] mb-4">
             Perguntas Frequentes
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -56,12 +56,12 @@ const FAQ = () => {
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="bg-white rounded-lg shadow-sm border border-gray-200"
+                className="bg-[#003B5C] rounded-lg shadow-sm border border-gray-200"
               >
-                <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:text-blue-600">
+                <AccordionTrigger className="px-6 py-4 text-left font-semibold text-white hover:text-gray-200">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 text-gray-600 leading-relaxed">
+                <AccordionContent className="px-6 pb-4 text-gray-200 leading-relaxed">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -70,7 +70,7 @@ const FAQ = () => {
           
           {/* Contact CTA */}
           <div className="mt-12 text-center bg-white rounded-xl p-8 shadow-lg">
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">
+            <h3 className="text-xl font-semibold text-[#003B5C] mb-4">
               Não encontrou sua dúvida?
             </h3>
             <p className="text-gray-600 mb-6">
@@ -78,18 +78,18 @@ const FAQ = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="https://wa.me/5511999999999" 
+                href="https://wa.me/5581996405005" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
               >
-                WhatsApp: (11) 99999-9999
+                WhatsApp: (81) 99640-5005
               </a>
               <a 
-                href="mailto:comercial@vemtransport.com.br"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
+                href="mailto:comercial@vemtransportadora.com.br"
+                className="bg-[#003B5C] hover:bg-[#003B5C]/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
               >
-                Email: comercial@vemtransport.com.br
+                Email: comercial@vemtransportadora.com.br
               </a>
             </div>
           </div>

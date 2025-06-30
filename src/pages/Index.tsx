@@ -4,7 +4,6 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import AboutUs from '../components/AboutUs';
 import HowItWorks from '../components/HowItWorks';
-import Coverage from '../components/Coverage';
 import Benefits from '../components/Benefits';
 import Testimonials from '../components/Testimonials';
 import QuoteForm from '../components/QuoteForm';
@@ -19,10 +18,9 @@ const Index = () => {
       <AboutUs />
       <HowItWorks />
       <Benefits />
-      <Coverage />
       <Testimonials />
-      <QuoteForm />
       <FAQ />
+      <QuoteForm />
       <Footer />
     </div>
   );

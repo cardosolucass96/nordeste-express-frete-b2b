@@ -19,7 +19,8 @@ const QuoteForm = () => {
     origem: '',
     destino: '',
     tipo: '',
-    volume: '',
+    m3: '',
+    peso: '',
     observacoes: ''
   });
   const { toast } = useToast();
@@ -32,14 +33,37 @@ const QuoteForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simular envio ao CRM
-    setTimeout(() => {
+    try {
+      // Enviar para Kommo CRM
+      const response = await fetch('https://api.kommo.com/v3/leads', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          empresa: formData.empresa,
+          cnpj: formData.cnpj,
+          contato_nome: formData.contato,
+          telefone: formData.telefone,
+          email: formData.email,
+          origem: formData.origem,
+          destino: formData.destino,
+          tipo_transporte: formData.tipo,
+          m3: formData.m3,
+          peso: formData.peso,
+          observacao: formData.observacoes
+        }),
+      });
+
       console.log('Dados enviados para o CRM:', formData);
+      
       toast({
         title: "Cotação enviada com sucesso!",
         description: "Entraremos em contato em até 2 horas. Verifique seu WhatsApp e email.",
       });
-      setIsSubmitting(false);
+      
+      // Redirecionar para WhatsApp
+      window.open('https://wa.me/5581996405005?text=Olá%20Vem%20Transportadora,%20enviei%20uma%20cotação%20via%20site.', '_blank');
       
       // Reset form
       setFormData({
@@ -51,14 +75,24 @@ const QuoteForm = () => {
         origem: '',
         destino: '',
         tipo: '',
-        volume: '',
+        m3: '',
+        peso: '',
         observacoes: ''
       });
-    }, 2000);
+    } catch (error) {
+      console.error('Erro ao enviar cotação:', error);
+      toast({
+        title: "Erro ao enviar cotação",
+        description: "Tente novamente ou entre em contato via WhatsApp.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
-    <section id="cotacao" className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-red-600">
+    <section id="cotacao" className="py-20 bg-gradient-to-br from-[#003B5C] via-[#003B5C] to-[#FF4E00]">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -73,15 +107,15 @@ const QuoteForm = () => {
             {/* Benefits Row */}
             <div className="flex flex-wrap justify-center gap-6 mb-8">
               <div className="flex items-center text-blue-100">
-                <Clock className="w-5 h-5 mr-2 text-red-400" />
+                <Clock className="w-5 h-5 mr-2 text-[#FF4E00]" />
                 <span>Resposta em 2h</span>
               </div>
               <div className="flex items-center text-blue-100">
-                <Shield className="w-5 h-5 mr-2 text-red-400" />
+                <Shield className="w-5 h-5 mr-2 text-[#FF4E00]" />
                 <span>Seguro Incluso</span>
               </div>
               <div className="flex items-center text-blue-100">
-                <Truck className="w-5 h-5 mr-2 text-red-400" />
+                <Truck className="w-5 h-5 mr-2 text-[#FF4E00]" />
                 <span>Frota Própria</span>
               </div>
             </div>
@@ -92,8 +126,8 @@ const QuoteForm = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Company Info */}
               <div className="border-b pb-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-2 text-red-600" />
+                <h3 className="text-xl font-semibold text-[#003B5C] mb-4 flex items-center">
+                  <CheckCircle className="w-5 h-5 mr-2 text-[#FF4E00]" />
                   Dados da Empresa
                 </h3>
                 <div className="grid md:grid-cols-2 gap-4">
@@ -105,7 +139,7 @@ const QuoteForm = () => {
                       value={formData.empresa}
                       onChange={(e) => handleInputChange('empresa', e.target.value)}
                       required
-                      className="mt-1 border-gray-300 focus:border-red-500 focus:ring-red-500"
+                      className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
                       placeholder="Ex: Distribuidora ABC Ltda"
                     />
                   </div>
@@ -117,7 +151,7 @@ const QuoteForm = () => {
                       value={formData.cnpj}
                       onChange={(e) => handleInputChange('cnpj', e.target.value)}
                       required
-                      className="mt-1 border-gray-300 focus:border-red-500 focus:ring-red-500"
+                      className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
                       placeholder="00.000.000/0000-00"
                     />
                   </div>
@@ -126,8 +160,8 @@ const QuoteForm = () => {
               
               {/* Contact Info */}
               <div className="border-b pb-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-2 text-red-600" />
+                <h3 className="text-xl font-semibold text-[#003B5C] mb-4 flex items-center">
+                  <CheckCircle className="w-5 h-5 mr-2 text-[#FF4E00]" />
                   Dados de Contato
                 </h3>
                 <div className="grid md:grid-cols-3 gap-4">
@@ -139,7 +173,7 @@ const QuoteForm = () => {
                       value={formData.contato}
                       onChange={(e) => handleInputChange('contato', e.target.value)}
                       required
-                      className="mt-1 border-gray-300 focus:border-red-500 focus:ring-red-500"
+                      className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
                       placeholder="Seu nome completo"
                     />
                   </div>
@@ -151,7 +185,7 @@ const QuoteForm = () => {
                       value={formData.telefone}
                       onChange={(e) => handleInputChange('telefone', e.target.value)}
                       required
-                      className="mt-1 border-gray-300 focus:border-red-500 focus:ring-red-500"
+                      className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
                       placeholder="(11) 99999-9999"
                     />
                   </div>
@@ -163,7 +197,7 @@ const QuoteForm = () => {
                       value={formData.email}
                       onChange={(e) => handleInputChange('email', e.target.value)}
                       required
-                      className="mt-1 border-gray-300 focus:border-red-500 focus:ring-red-500"
+                      className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
                       placeholder="seuemail@empresa.com"
                     />
                   </div>
@@ -172,8 +206,8 @@ const QuoteForm = () => {
               
               {/* Shipping Details */}
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
-                  <Truck className="w-5 h-5 mr-2 text-red-600" />
+                <h3 className="text-xl font-semibold text-[#003B5C] mb-4 flex items-center">
+                  <Truck className="w-5 h-5 mr-2 text-[#FF4E00]" />
                   Detalhes do Frete
                 </h3>
                 <div className="grid md:grid-cols-2 gap-4 mb-4">
@@ -185,7 +219,7 @@ const QuoteForm = () => {
                       value={formData.origem}
                       onChange={(e) => handleInputChange('origem', e.target.value)}
                       required
-                      className="mt-1 border-gray-300 focus:border-red-500 focus:ring-red-500"
+                      className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
                       placeholder="Ex: São Paulo, SP"
                     />
                   </div>
@@ -197,35 +231,46 @@ const QuoteForm = () => {
                       value={formData.destino}
                       onChange={(e) => handleInputChange('destino', e.target.value)}
                       required
-                      className="mt-1 border-gray-300 focus:border-red-500 focus:ring-red-500"
+                      className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
                       placeholder="Ex: Recife, PE"
                     />
                   </div>
                 </div>
                 
-                <div className="grid md:grid-cols-2 gap-4 mb-4">
+                <div className="grid md:grid-cols-3 gap-4 mb-4">
                   <div>
                     <Label htmlFor="tipo" className="text-gray-700">Tipo de Transporte *</Label>
                     <Select onValueChange={(value) => handleInputChange('tipo', value)}>
-                      <SelectTrigger className="mt-1 border-gray-300 focus:border-red-500 focus:ring-red-500">
+                      <SelectTrigger className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]">
                         <SelectValue placeholder="Selecione o tipo" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="fracionada">Carga Fracionada (até 15m³)</SelectItem>
-                        <SelectItem value="lotacao">Carga Lotação (acima de 15m³)</SelectItem>
+                        <SelectItem value="fracionada">Carga Fracionada</SelectItem>
+                        <SelectItem value="lotacao">Carga Dedicada (Lotação)</SelectItem>
                         <SelectItem value="nao-sei">Não sei qual escolher</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
                   <div>
-                    <Label htmlFor="volume" className="text-gray-700">Volume/Peso Aproximado</Label>
+                    <Label htmlFor="m3" className="text-gray-700">m³ da carga</Label>
                     <Input
-                      id="volume"
+                      id="m3"
                       type="text"
-                      value={formData.volume}
-                      onChange={(e) => handleInputChange('volume', e.target.value)}
-                      className="mt-1 border-gray-300 focus:border-red-500 focus:ring-red-500"
-                      placeholder="Ex: 4 m³ ou 600 kg"
+                      value={formData.m3}
+                      onChange={(e) => handleInputChange('m3', e.target.value)}
+                      className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
+                      placeholder="Ex: 4 m³"
+                    />
+                  </div>
+                  <div>
+                    <Label htmlFor="peso" className="text-gray-700">Peso total (kg)</Label>
+                    <Input
+                      id="peso"
+                      type="text"
+                      value={formData.peso}
+                      onChange={(e) => handleInputChange('peso', e.target.value)}
+                      className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
+                      placeholder="Ex: 600 kg"
                     />
                   </div>
                 </div>
@@ -236,7 +281,7 @@ const QuoteForm = () => {
                     id="observacoes"
                     value={formData.observacoes}
                     onChange={(e) => handleInputChange('observacoes', e.target.value)}
-                    className="mt-1 border-gray-300 focus:border-red-500 focus:ring-red-500"
+                    className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
                     placeholder="Informe detalhes sobre sua carga, urgência, frequência de envio, etc."
                     rows={3}
                   />
@@ -248,7 +293,7 @@ const QuoteForm = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-red-600 hover:bg-red-700 text-white py-4 text-lg font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200"
+                  className="w-full bg-[#FF4E00] hover:bg-[#FF4E00]/90 text-white py-4 text-lg font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200"
                   size="lg"
                 >
                   {isSubmitting ? (
