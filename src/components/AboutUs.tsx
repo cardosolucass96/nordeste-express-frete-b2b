@@ -45,19 +45,29 @@ const AboutUs = () => {
         <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-2xl p-8 md:p-12 text-white">
           <div className="text-center mb-8">
             <h3 className="text-2xl md:text-3xl font-bold mb-2">
-              Nossa Localização
+              Nossas Unidades
             </h3>
             <p className="text-blue-100">
-              Estrategicamente posicionados em Carpina/PE
+              Estrategicamente posicionados para atender Sudeste e Nordeste
             </p>
           </div>
           
-          <div className="text-center">
-            <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <MapPin className="w-8 h-8 text-white" />
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="text-center">
+              <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <MapPin className="w-8 h-8 text-white" />
+              </div>
+              <h4 className="text-xl font-bold mb-2">Carpina/PE</h4>
+              <p className="text-blue-100">Matriz, Armazéns de Carga Geral e Centro de Distribuição</p>
             </div>
-            <h4 className="text-xl font-bold mb-2">Carpina/PE</h4>
-            <p className="text-blue-100">Matriz, Armazéns de Carga Geral e Centro de Distribuição</p>
+            
+            <div className="text-center">
+              <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <MapPin className="w-8 h-8 text-white" />
+              </div>
+              <h4 className="text-xl font-bold mb-2">São Paulo/SP</h4>
+              <p className="text-blue-100">Unidade de apoio para coleta de mercadorias</p>
+            </div>
           </div>
         </div>
       </div>
