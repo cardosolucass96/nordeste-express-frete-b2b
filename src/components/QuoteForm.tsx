@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -320,10 +319,17 @@ const QuoteForm = () => {
             </p>
             <Button
               variant="outline"
-              className="border-2 border-white/30 text-white hover:bg-white/10"
+              className="border-2 border-white/30 text-white bg-white/10 hover:bg-white/10"
               size="lg"
+              asChild
             >
-              (81) 99640-5005
+              <a
+                href="https://wa.me/5581996405005?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20a%20Vem%20Transportadora"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                (81) 99640-5005
+              </a>
             </Button>
           </div>
         </div>

@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { Package, Truck, Users, Clock } from 'lucide-react';
 
 const HowItWorks = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section id="how-it-works" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -131,3 +130,26 @@ const HowItWorks = () => {
 };
 
 export default HowItWorks;
+
+<section id="contato" className="py-20 bg-white">
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Fale Conosco
+      </h2>
+      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        Estamos aqui para ajudar você a encontrar a melhor solução em transporte.
+      </p>
+    </div>
+    
+    <div className="max-w-md mx-auto">
+      <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+        Precisa falar conosco agora? Chame no WhatsApp:
+      </h3>
+      
+      <a href="https://api.whatsapp.com/send?phone=5511999998888" target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-green-600 transition-all duration-300">
+        <i className="fab fa-whatsapp mr-2"></i> Conversar pelo WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
