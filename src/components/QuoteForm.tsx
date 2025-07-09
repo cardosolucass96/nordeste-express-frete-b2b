@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import InputMask from 'react-input-mask';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -145,15 +146,22 @@ const QuoteForm = () => {
                   </div>
                   <div>
                     <Label htmlFor="cnpj" className="text-gray-700">CNPJ *</Label>
-                    <Input
-                      id="cnpj"
-                      type="text"
+                    <InputMask
+                      mask="99.999.999/9999-99"
                       value={formData.cnpj}
                       onChange={(e) => handleInputChange('cnpj', e.target.value)}
-                      required
-                      className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
-                      placeholder="00.000.000/0000-00"
-                    />
+                    >
+                      {(inputProps: any) => (
+                        <Input
+                          {...inputProps}
+                          id="cnpj"
+                          type="text"
+                          required
+                          className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
+                          placeholder="00.000.000/0000-00"
+                        />
+                      )}
+                    </InputMask>
                   </div>
                 </div>
               </div>
@@ -179,15 +187,22 @@ const QuoteForm = () => {
                   </div>
                   <div>
                     <Label htmlFor="telefone" className="text-gray-700">Telefone / WhatsApp *</Label>
-                    <Input
-                      id="telefone"
-                      type="tel"
+                    <InputMask
+                      mask="(99) 99999-9999"
                       value={formData.telefone}
                       onChange={(e) => handleInputChange('telefone', e.target.value)}
-                      required
-                      className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
-                      placeholder="(11) 99999-9999"
-                    />
+                    >
+                      {(inputProps: any) => (
+                        <Input
+                          {...inputProps}
+                          id="telefone"
+                          type="tel"
+                          required
+                          className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
+                          placeholder="(11) 99999-9999"
+                        />
+                      )}
+                    </InputMask>
                   </div>
                   <div>
                     <Label htmlFor="email" className="text-gray-700">E-mail Corporativo *</Label>
@@ -255,22 +270,26 @@ const QuoteForm = () => {
                     <Label htmlFor="m3" className="text-gray-700">m³ da carga (opcional)</Label>
                     <Input
                       id="m3"
-                      type="text"
+                      type="number"
+                      min="0"
+                      step="0.01"
                       value={formData.m3}
-                      onChange={(e) => handleInputChange('m3', e.target.value)}
+                      onChange={(e) => handleInputChange('m3', e.target.value.replace(/[^0-9.,]/g, ''))}
                       className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
-                      placeholder="Ex: 4 m³"
+                      placeholder="Ex: 4"
                     />
                   </div>
                   <div>
                     <Label htmlFor="peso" className="text-gray-700">Peso total (kg)</Label>
                     <Input
                       id="peso"
-                      type="text"
+                      type="number"
+                      min="0"
+                      step="0.01"
                       value={formData.peso}
-                      onChange={(e) => handleInputChange('peso', e.target.value)}
+                      onChange={(e) => handleInputChange('peso', e.target.value.replace(/[^0-9.,]/g, ''))}
                       className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
-                      placeholder="Ex: 600 kg"
+                      placeholder="Ex: 600"
                     />
                   </div>
                 </div>
