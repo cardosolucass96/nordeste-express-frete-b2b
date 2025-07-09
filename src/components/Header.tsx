@@ -17,7 +17,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/dbf22778-80eb-4351-8ef9-2b6033381e4e.png" 
+              src="/logo-vem-transportadora.png" 
               alt="Vem Transportadora" 
               className="h-12 w-auto"
             />
@@ -98,7 +98,7 @@ const Header = () => {
                 onClick={() => scrollToSection('cotacao')}
                 className="bg-red-600 hover:bg-red-700 text-white w-full"
               >
-                Solicitar Orçamento
+                Solicitar
               </Button>
             </nav>
           </div>

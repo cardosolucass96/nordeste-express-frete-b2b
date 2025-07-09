@@ -18,14 +18,7 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Logo Principal */}
-          <div className="mb-12">
-            <img 
-              src="/lovable-uploads/dbf22778-80eb-4351-8ef9-2b6033381e4e.png" 
-              alt="Vem Transportadora" 
-              className="h-32 md:h-40 w-auto mx-auto"
-            />
-          </div>
+
 
           {/* Badge */}
           <div className="inline-flex items-center bg-[#FF4E00]/20 text-red-300 px-4 py-2 rounded-full text-sm font-medium mb-8 animate-fade-in">

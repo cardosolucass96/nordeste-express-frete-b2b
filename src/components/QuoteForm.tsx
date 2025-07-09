@@ -31,39 +31,40 @@ const QuoteForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
+    // Captura UTM params da URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const utms = {
+      utm_source: urlParams.get('utm_source') || '',
+      utm_medium: urlParams.get('utm_medium') || '',
+      utm_campaign: urlParams.get('utm_campaign') || '',
+      utm_term: urlParams.get('utm_term') || '',
+      utm_content: urlParams.get('utm_content') || '',
+    };
+
     try {
-      // Enviar para Kommo CRM
-      const response = await fetch('https://api.kommo.com/v3/leads', {
+      // Enviar para o webhook n8n
+      const response = await fetch('https://webhook-n8n.grupovorp.com/webhook/vem-tranportadora', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          empresa: formData.empresa,
-          cnpj: formData.cnpj,
-          contato_nome: formData.contato,
-          telefone: formData.telefone,
-          email: formData.email,
-          origem: formData.origem,
-          destino: formData.destino,
-          tipo_transporte: formData.tipo,
-          m3: formData.m3,
-          peso: formData.peso,
-          observacao: formData.observacoes
+          ...formData,
+          ...utms,
         }),
       });
 
-      console.log('Dados enviados para o CRM:', formData);
-      
+      console.log('Dados enviados para o webhook:', { ...formData, ...utms });
+
       toast({
         title: "Cotação enviada com sucesso!",
         description: "Entraremos em contato em até 2 horas. Verifique seu WhatsApp e email.",
       });
-      
+
       // Redirecionar para WhatsApp
       window.open('https://wa.me/5581996405005?text=Olá%20Vem%20Transportadora,%20enviei%20uma%20cotação%20via%20site.', '_blank');
-      
+
       // Reset form
       setFormData({
         empresa: '',
