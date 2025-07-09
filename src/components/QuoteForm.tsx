@@ -251,7 +251,7 @@ const QuoteForm = () => {
                     </Select>
                   </div>
                   <div>
-                    <Label htmlFor="m3" className="text-gray-700">m³ da carga</Label>
+                    <Label htmlFor="m3" className="text-gray-700">m³ da carga (opcional)</Label>
                     <Input
                       id="m3"
                       type="text"

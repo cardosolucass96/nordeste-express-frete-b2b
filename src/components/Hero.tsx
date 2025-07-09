@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Truck, Shield, Clock, MapPin } from 'lucide-react';
@@ -43,8 +42,11 @@ const Hero = () => {
           
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto animate-fade-in">
-            Frota própria + rede de parceiros, cobertura SP → PE/SE/AL/RN/PB/CE, 
-            seguro incluso e rastreio 24h
+            <span className="font-semibold text-white">Frota própria</span>, 
+            <span className="font-semibold text-white"> rede de parceiros</span>, 
+            <span className="font-semibold text-white"> cobertura SP-Nordeste</span>, 
+            <span className="font-semibold text-white"> seguro incluso</span> e 
+            <span className="font-semibold text-white"> rastreamento 24h</span>
           </p>
           
           {/* Key Benefits */}

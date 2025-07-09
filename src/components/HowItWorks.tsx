@@ -32,7 +32,7 @@ const HowItWorks = () => {
             <div className="space-y-4">
               <div className="flex items-start">
                 <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3"></div>
-                <span className="text-gray-700">Volumes de 1m³ até 10m³</span>
+                <span className="text-gray-700">Frete calculado por peso ou metro cúbico</span>
               </div>
               <div className="flex items-start">
                 <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3"></div>
@@ -41,10 +41,6 @@ const HowItWorks = () => {
               <div className="flex items-start">
                 <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3"></div>
                 <span className="text-gray-700">Coletas programadas 3x por semana</span>
-              </div>
-              <div className="flex items-start">
-                <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3"></div>
-                <span className="text-gray-700">Prazo: 3 a 5 dias úteis</span>
               </div>
             </div>
           </div>
@@ -66,7 +62,7 @@ const HowItWorks = () => {
             <div className="space-y-4">
               <div className="flex items-start">
                 <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></div>
-                <span className="text-gray-700">Volumes acima de 15m³</span>
+                <span className="text-gray-700">Frete calculado por peso ou metro cúbico</span>
               </div>
               <div className="flex items-start">
                 <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></div>
@@ -75,10 +71,6 @@ const HowItWorks = () => {
               <div className="flex items-start">
                 <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></div>
                 <span className="text-gray-700">Coleta e entrega sob demanda</span>
-              </div>
-              <div className="flex items-start">
-                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></div>
-                <span className="text-gray-700">Prazo: 2 a 3 dias úteis</span>
               </div>
             </div>
           </div>
@@ -147,7 +139,7 @@ export default HowItWorks;
         Precisa falar conosco agora? Chame no WhatsApp:
       </h3>
       
-      <a href="https://api.whatsapp.com/send?phone=5511999998888" target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-green-600 transition-all duration-300">
+      <a href="https://api.whatsapp.com/send/?phone=5581996405005&text=Ol%C3%A1%2C+vim+pelo+site+e+quero+saber+mais+sobre+a+Vem+Transportadora&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-green-600 transition-all duration-300">
         <i className="fab fa-whatsapp mr-2"></i> Conversar pelo WhatsApp
       </a>
     </div>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Truck, Phone, Mail, MapPin, Clock, Shield, Star } from 'lucide-react';
 
@@ -12,7 +11,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
               <Truck className="w-8 h-8 text-orange-500 mr-2" />
-              <span className="text-2xl font-bold">Vem Transport</span>
+              <span className="text-2xl font-bold">Vem Transportortadora</span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Há mais de 10 anos conectando o Sudeste e Nordeste com transporte seguro, 
@@ -22,8 +21,12 @@ const Footer = () => {
             {/* Certifications */}
             <div className="flex items-center space-x-4 mb-6">
               <div className="bg-blue-600 px-3 py-1 rounded text-sm">ANTT</div>
-              <div className="bg-green-600 px-3 py-1 rounded text-sm">ISO 9001</div>
               <div className="bg-orange-500 px-3 py-1 rounded text-sm">RNTRC</div>
+              {/* Adicione aqui outras licenças que Vital enviar */}
+              {/* Exemplo: */}
+              {/* <div className="bg-green-600 px-3 py-1 rounded text-sm">Licença Ambiental</div> */}
+              {/* Prêmios e reconhecimentos */}
+              <div className="bg-yellow-500 px-3 py-1 rounded text-sm">Prêmio Excelência 2023</div>
             </div>
             
             {/* Trust Indicators */}
@@ -62,26 +65,29 @@ const Footer = () => {
             </div>
           </div>
           
-          {/* Services */}
+          {/* Services and Main Routes Side by Side */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Nossos Serviços</h3>
-            <ul className="space-y-2 text-gray-300">
-              <li className="hover:text-orange-500 cursor-pointer transition-colors">Carga Fracionada</li>
-              <li className="hover:text-orange-500 cursor-pointer transition-colors">Carga Lotação</li>
-              <li className="hover:text-orange-500 cursor-pointer transition-colors">Transporte Expresso</li>
-              <li className="hover:text-orange-500 cursor-pointer transition-colors">Logística Reversa</li>
-              <li className="hover:text-orange-500 cursor-pointer transition-colors">Armazenagem</li>
-            </ul>
-            
-            <h4 className="text-lg font-semibold mt-6 mb-3">Rotas Principais</h4>
-            <ul className="space-y-1 text-sm text-gray-400">
-              <li>SP → Recife</li>
-              <li>SP → Salvador</li>
-              <li>SP → Fortaleza</li>
-              <li>SP → Maceió</li>
-              <li>SP → João Pessoa</li>
-              <li>SP → Natal</li>
-            </ul>
+            <div className="flex flex-col md:flex-row md:space-x-8">
+              <ul className="space-y-2 text-gray-300 mb-6 md:mb-0">
+                <li className="hover:text-orange-500 cursor-pointer transition-colors">Carga Fracionada</li>
+                <li className="hover:text-orange-500 cursor-pointer transition-colors">Carga Lotação</li>
+                <li className="hover:text-orange-500 cursor-pointer transition-colors">Transporte Expresso</li>
+                <li className="hover:text-orange-500 cursor-pointer transition-colors">Logística Reversa</li>
+                <li className="hover:text-orange-500 cursor-pointer transition-colors">Armazenagem</li>
+              </ul>
+              <div>
+                <h4 className="text-lg font-semibold mb-3">Rotas Principais</h4>
+                <ul className="space-y-1 text-sm text-gray-400">
+                  <li>SP → Recife</li>
+                  <li>SP → Salvador</li>
+                  <li>SP → Fortaleza</li>
+                  <li>SP → Maceió</li>
+                  <li>SP → João Pessoa</li>
+                  <li>SP → Natal</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -105,13 +111,13 @@ const Footer = () => {
       {/* Floating WhatsApp */}
       <div className="fixed bottom-6 right-6 z-50">
         <a
-          href="https://wa.me/5511999999999"
+          href="https://api.whatsapp.com/send/?phone=5581996405005&text=Ol%C3%A1%2C+vim+pelo+site+e+quero+saber+mais+sobre+a+Vem+Transportadora&type=phone_number&app_absent=0"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transform hover:scale-110 transition-all duration-200 flex items-center"
         >
           <Phone className="w-6 h-6" />
-          <span className="ml-2 hidden sm:inline">Fale Conosco</span>
+          <span className="ml-2 hidden sm:inline">Falar no WhatsApp</span>
         </a>
       </div>
     </footer>

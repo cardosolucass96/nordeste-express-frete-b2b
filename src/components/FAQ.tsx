@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
@@ -6,35 +5,43 @@ const FAQ = () => {
   const faqs = [
     {
       question: "Quais são os prazos de entrega?",
-      answer: "Variam conforme origem, destino e modalidade (fracionada ou dedicada). Coletas semanais saindo de SP p/ PE e demais capitais nordestinas. Consulte nosso time comercial ou rastreie sua carga para o prazo exato."
+      answer:
+        "Os prazos variam conforme origem, destino e modalidade. Para carga fracionada: 5 a 7 dias úteis. Para carga lotação: 4 a 6 dias úteis. Consulte nosso time comercial para prazos exatos."
     },
     {
       question: "Como funciona o seguro da carga?",
-      answer: "Seguro obrigatório RCTR-C incluso (acidentes) e cobertura adicional RCF-DC contra roubo, conforme perfil da carga. Valor pode ser embutido no frete via ad valorem."
+      answer:
+        "Todas as cargas possuem seguro obrigatório RCTR-C (acidentes) incluso. Para cargas fracionadas, a cobertura é de até R$ 1 milhão por embarque. Também oferecemos cobertura adicional contra roubo (RCF-DC), conforme perfil da carga."
     },
     {
       question: "Posso rastrear minha carga em tempo real?",
-      answer: "Sim — updates automáticos do carregamento à entrega. Solicite acesso ao nosso painel ou acompanhe via equipe de atendimento."
+      answer:
+        "Sim — updates automáticos do carregamento à entrega. Solicite acesso ao nosso painel ou acompanhe via equipe de atendimento."
     },
     {
       question: "Qual o limite de peso e volume para carga fracionada?",
-      answer: "Depende do produto, embalagem e roteirização. Podemos ofertar solução dedicada para volumes/pesos acima do padrão. Fale conosco para avaliar."
+      answer:
+        "Depende do produto, embalagem e roteirização. Podemos ofertar solução dedicada para volumes/pesos acima do padrão. Fale conosco para avaliar."
     },
     {
       question: "Fazem coleta em qualquer local de São Paulo?",
-      answer: "Sim, cobrimos toda a Grande São Paulo e regiões próximas mediante agendamento."
+      answer:
+        "Sim, cobrimos toda a Grande São Paulo e regiões próximas mediante agendamento."
     },
     {
       question: "Como funciona o pagamento?",
-      answer: "Boleto ou transferência. Clientes com cadastro aprovado possuem condições e prazos diferenciados."
+      answer:
+        "Boleto ou transferência. Clientes com cadastro aprovado possuem condições e prazos diferenciados."
     },
     {
       question: "Transportam produtos perigosos ou frágeis?",
-      answer: "Sim. Exigimos documentação ANTT para cargas perigosas (ficha de emergência e rótulo) e embalagem adequada para itens frágeis."
+      answer:
+        "Sim. Exigimos documentação ANTT para cargas perigosas (ficha de emergência e rótulo) e embalagem adequada para itens frágeis."
     },
     {
       question: "Oferecem desconto para cargas frequentes?",
-      answer: "Sim. Volumes recorrentes têm condições comerciais especiais — solicite uma proposta personalizada."
+      answer:
+        "Sim. Volumes recorrentes têm condições comerciais especiais — solicite uma proposta personalizada."
     }
   ];
 
