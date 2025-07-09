@@ -21,7 +21,7 @@ const Footer = () => {
             <div className="flex items-center mb-4">
               <Truck className="w-8 h-8 text-orange-500 mr-2" />
               <span className="text-2xl font-bold">
-                Vem Transportortadora
+                Vem Transportadora
               </span>
             </div>
 
@@ -63,7 +63,7 @@ const Footer = () => {
             <ul className="space-y-3 text-gray-300">
               <li className="flex items-center">
                 <Phone className="mr-3 h-4 w-4 text-orange-500" />
-                (11)&nbsp;99999-9999
+                (81)&nbsp;99440-5005
               </li>
               <li className="flex items-center">
                 <Mail className="mr-3 h-4 w-4 text-orange-500" />
@@ -71,12 +71,12 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <MapPin className="mr-3 mt-0.5 h-4 w-4 text-orange-500" />
-                Rua&nbsp;dos&nbsp;Transportes,&nbsp;123<br />
-                São&nbsp;Paulo&nbsp;-&nbsp;SP,&nbsp;01234-567
+                Av.&nbsp;da&nbsp;Bandeira,&nbsp;564,&nbsp;564<br />
+                Carpina&nbsp;-&nbsp;PE,&nbsp;55818-565
               </li>
               <li className="flex items-start">
                 <Clock className="mr-3 h-4 w-4 text-orange-500" />
-                Seg à Sex:&nbsp;7h – 18h<br />
+                Seg à Sex:&nbsp;8h – 18h<br />
                 Sáb:&nbsp;8h – 12h
               </li>
             </ul>
@@ -127,7 +127,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-gray-800">
         <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 py-6 text-sm text-gray-400 md:flex-row">
-          <span>© 2024 Vem Transport. Todos os direitos reservados.</span>
+          <span>© 2025 Vem Transportadora. Todos os direitos reservados.</span>
           <nav className="flex gap-6">
             <a href="#" className="transition-colors hover:text-white">
               Política de Privacidade
