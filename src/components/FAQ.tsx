@@ -49,7 +49,7 @@ const FAQ = () => {
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#003B5C] mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1f1f3e] mb-4">
             Perguntas Frequentes
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -63,7 +63,7 @@ const FAQ = () => {
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="bg-[#003B5C] rounded-lg shadow-sm border border-gray-200"
+                className="bg-[#1f1f3e] rounded-lg shadow-sm border border-gray-200"
               >
                 <AccordionTrigger className="px-6 py-4 text-left font-semibold text-white hover:text-gray-200">
                   {faq.question}
@@ -77,7 +77,7 @@ const FAQ = () => {
           
           {/* Contact CTA */}
           <div className="mt-12 text-center bg-white rounded-xl p-8 shadow-lg">
-            <h3 className="text-xl font-semibold text-[#003B5C] mb-4">
+            <h3 className="text-xl font-semibold text-[#1f1f3e] mb-4">
               Não encontrou sua dúvida?
             </h3>
             <p className="text-gray-600 mb-6">
@@ -94,7 +94,7 @@ const FAQ = () => {
               </a>
               <a 
                 href="mailto:comercial@vemtransportadora.com.br"
-                className="bg-[#003B5C] hover:bg-[#003B5C]/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
+                className="bg-[#1f1f3e] hover:bg-[#1f1f3e]/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
               >
                 Email: comercial@vemtransportadora.com.br
               </a>

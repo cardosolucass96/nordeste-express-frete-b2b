@@ -53,7 +53,7 @@ const Testimonials = () => {
               </div>
               
               {/* Quote Icon */}
-              <Quote className="w-8 h-8 text-blue-600 mb-4" />
+              <Quote className="w-8 h-8 text-[#1f1f3e] mb-4" />
               
               {/* Content */}
               <p className="text-gray-700 mb-6 italic leading-relaxed">
@@ -67,7 +67,7 @@ const Testimonials = () => {
                 </div>
               )}
               {testimonial.highlight && (
-                <div className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold mb-4">
+                <div className="inline-block bg-[#1f1f3e]/10 text-[#1f1f3e] px-3 py-1 rounded-full text-sm font-semibold mb-4">
                   {testimonial.highlight}
                 </div>
               )}
@@ -76,7 +76,7 @@ const Testimonials = () => {
               <div className="border-t pt-4">
                 <div className="font-semibold text-gray-900">{testimonial.name}</div>
                 <div className="text-sm text-gray-600">{testimonial.role}</div>
-                <div className="text-sm text-blue-600 font-medium">{testimonial.company}</div>
+                <div className="text-sm text-[#1f1f3e] font-medium">{testimonial.company}</div>
               </div>
             </div>
           ))}

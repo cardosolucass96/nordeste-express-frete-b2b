@@ -93,7 +93,7 @@ const QuoteForm = () => {
   };
 
   return (
-    <section id="cotacao" className="py-20 bg-gradient-to-br from-[#003B5C] via-[#003B5C] to-[#e52021]">
+    <section id="cotacao" className="py-20 bg-gradient-to-br from-[#1f1f3e] via-[#1f1f3e] to-[#e52021]">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -101,21 +101,21 @@ const QuoteForm = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Peça sua Cotação em Menos de 1 Minuto
             </h2>
-            <p className="text-xl text-blue-100 mb-8">
+            <p className="text-xl text-[#ffffff]/80 mb-8">
               Resposta garantida em até 2 horas, mesmo aos sábados!
             </p>
             
             {/* Benefits Row */}
             <div className="flex flex-wrap justify-center gap-6 mb-8">
-            <div className="flex items-center text-blue-100">
+              <div className="flex items-center text-[#ffffff]/80">
                 <Clock className="w-5 h-5 mr-2 text-[#e52021]" />
                 <span>Resposta em 2h</span>
               </div>
-              <div className="flex items-center text-blue-100">
+              <div className="flex items-center text-[#ffffff]/80">
                 <Shield className="w-5 h-5 mr-2 text-[#e52021]" />
                 <span>Seguro Incluso</span>
               </div>
-              <div className="flex items-center text-blue-100">
+              <div className="flex items-center text-[#ffffff]/80">
                 <Truck className="w-5 h-5 mr-2 text-[#e52021]" />
                 <span>Frota Própria</span>
               </div>
@@ -127,7 +127,7 @@ const QuoteForm = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Company Info */}
               <div className="border-b pb-6">
-                <h3 className="text-xl font-semibold text-[#003B5C] mb-4 flex items-center">
+                <h3 className="text-xl font-semibold text-[#1f1f3e] mb-4 flex items-center">
                   <CheckCircle className="w-5 h-5 mr-2 text-[#e52021]" />
                   Dados da Empresa
                 </h3>
@@ -168,7 +168,7 @@ const QuoteForm = () => {
               
               {/* Contact Info */}
               <div className="border-b pb-6">
-                <h3 className="text-xl font-semibold text-[#003B5C] mb-4 flex items-center">
+                <h3 className="text-xl font-semibold text-[#1f1f3e] mb-4 flex items-center">
                   <CheckCircle className="w-5 h-5 mr-2 text-[#e52021]" />
                   Dados de Contato
                 </h3>
@@ -221,7 +221,7 @@ const QuoteForm = () => {
               
               {/* Shipping Details */}
               <div>
-                <h3 className="text-xl font-semibold text-[#003B5C] mb-4 flex items-center">
+                <h3 className="text-xl font-semibold text-[#1f1f3e] mb-4 flex items-center">
                   <Truck className="w-5 h-5 mr-2 text-[#e52021]" />
                   Detalhes do Frete
                 </h3>
@@ -334,7 +334,7 @@ const QuoteForm = () => {
           
           {/* Post-form CTA */}
           <div className="mt-8 text-center text-white">
-            <p className="text-blue-100 mb-4">
+            <p className="text-[#1f1f3e]/80 mb-4">
               Precisa falar conosco agora? Chame no WhatsApp:
             </p>
             <Button

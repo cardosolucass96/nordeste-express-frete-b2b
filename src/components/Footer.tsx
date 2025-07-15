@@ -33,7 +33,7 @@ const Footer = () => {
 
             {/* Certifications */}
             <div className="flex flex-wrap items-center gap-3 mb-6">
-              <span className="rounded bg-blue-600 px-3 py-1 text-sm">ANTT</span>
+              <span className="rounded bg-[#1f1f3e] px-3 py-1 text-sm">ANTT</span>
               <span className="rounded bg-[#e52021] px-3 py-1 text-sm">RNTRC</span>
               <span className="rounded bg-yellow-500 px-3 py-1 text-sm">Prêmio Excelência&nbsp;2023</span>
             </div>
@@ -59,7 +59,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="mr-3 h-4 w-4 text-[#e52021]" />
-                comercial@vemtransport.com.br
+                comercial@vemtransportadora.com.br
               </li>
               <li className="flex items-start">
                 <MapPin className="mr-3 mt-0.5 h-4 w-4 text-[#e52021]" />
@@ -117,7 +117,7 @@ const Footer = () => {
       {/* Floating WhatsApp */}
       <div className="fixed bottom-6 right-6 z-50">
         <a
-          href="https://api.whatsapp.com/send/?phone=5581996405005&text=Ol%C3%A1%2C+vim+pelo+site+e+quero+saber+mais+sobre+a+Vem+Transportadora&type=phone_number&app_absent=0"
+          href="https://api.whatsapp.com/send/?phone=5581994405005&text=Ol%C3%A1%2C+vim+pelo+site+e+quero+saber+mais+sobre+a+Vem+Transportadora&type=phone_number&app_absent=0"
           target="_blank"
           rel="noopener noreferrer"
           className="flex transform items-center rounded-full bg-green-500 p-4 text-white shadow-lg transition-all duration-200 hover:scale-110 hover:bg-green-600"
