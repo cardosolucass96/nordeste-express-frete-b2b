@@ -93,7 +93,7 @@ const QuoteForm = () => {
   };
 
   return (
-    <section id="cotacao" className="py-20 bg-gradient-to-br from-[#003B5C] via-[#003B5C] to-[#FF4E00]">
+    <section id="cotacao" className="py-20 bg-gradient-to-br from-[#003B5C] via-[#003B5C] to-[#e52021]">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -107,16 +107,16 @@ const QuoteForm = () => {
             
             {/* Benefits Row */}
             <div className="flex flex-wrap justify-center gap-6 mb-8">
-              <div className="flex items-center text-blue-100">
-                <Clock className="w-5 h-5 mr-2 text-[#FF4E00]" />
+            <div className="flex items-center text-blue-100">
+                <Clock className="w-5 h-5 mr-2 text-[#e52021]" />
                 <span>Resposta em 2h</span>
               </div>
               <div className="flex items-center text-blue-100">
-                <Shield className="w-5 h-5 mr-2 text-[#FF4E00]" />
+                <Shield className="w-5 h-5 mr-2 text-[#e52021]" />
                 <span>Seguro Incluso</span>
               </div>
               <div className="flex items-center text-blue-100">
-                <Truck className="w-5 h-5 mr-2 text-[#FF4E00]" />
+                <Truck className="w-5 h-5 mr-2 text-[#e52021]" />
                 <span>Frota Própria</span>
               </div>
             </div>
@@ -128,7 +128,7 @@ const QuoteForm = () => {
               {/* Company Info */}
               <div className="border-b pb-6">
                 <h3 className="text-xl font-semibold text-[#003B5C] mb-4 flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-2 text-[#FF4E00]" />
+                  <CheckCircle className="w-5 h-5 mr-2 text-[#e52021]" />
                   Dados da Empresa
                 </h3>
                 <div className="grid md:grid-cols-2 gap-4">
@@ -140,7 +140,7 @@ const QuoteForm = () => {
                       value={formData.empresa}
                       onChange={(e) => handleInputChange('empresa', e.target.value)}
                       required
-                      className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
+                      className="mt-1 border-gray-300 focus:border-[#e52021] focus:ring-[#e52021]"
                       placeholder="Ex: Distribuidora ABC Ltda"
                     />
                   </div>
@@ -157,7 +157,7 @@ const QuoteForm = () => {
                           id="cnpj"
                           type="text"
                           required
-                          className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
+                          className="mt-1 border-gray-300 focus:border-[#e52021] focus:ring-[#e52021]"
                           placeholder="00.000.000/0000-00"
                         />
                       )}
@@ -169,7 +169,7 @@ const QuoteForm = () => {
               {/* Contact Info */}
               <div className="border-b pb-6">
                 <h3 className="text-xl font-semibold text-[#003B5C] mb-4 flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-2 text-[#FF4E00]" />
+                  <CheckCircle className="w-5 h-5 mr-2 text-[#e52021]" />
                   Dados de Contato
                 </h3>
                 <div className="grid md:grid-cols-3 gap-4">
@@ -181,7 +181,7 @@ const QuoteForm = () => {
                       value={formData.contato}
                       onChange={(e) => handleInputChange('contato', e.target.value)}
                       required
-                      className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
+                      className="mt-1 border-gray-300 focus:border-[#e52021] focus:ring-[#e52021]"
                       placeholder="Seu nome completo"
                     />
                   </div>
@@ -198,7 +198,7 @@ const QuoteForm = () => {
                           id="telefone"
                           type="tel"
                           required
-                          className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
+                          className="mt-1 border-gray-300 focus:border-[#e52021] focus:ring-[#e52021]"
                           placeholder="(11) 99999-9999"
                         />
                       )}
@@ -212,7 +212,7 @@ const QuoteForm = () => {
                       value={formData.email}
                       onChange={(e) => handleInputChange('email', e.target.value)}
                       required
-                      className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
+                          className="mt-1 border-gray-300 focus:border-[#e52021] focus:ring-[#e52021]"
                       placeholder="seuemail@empresa.com"
                     />
                   </div>
@@ -222,7 +222,7 @@ const QuoteForm = () => {
               {/* Shipping Details */}
               <div>
                 <h3 className="text-xl font-semibold text-[#003B5C] mb-4 flex items-center">
-                  <Truck className="w-5 h-5 mr-2 text-[#FF4E00]" />
+                  <Truck className="w-5 h-5 mr-2 text-[#e52021]" />
                   Detalhes do Frete
                 </h3>
                 <div className="grid md:grid-cols-2 gap-4 mb-4">
@@ -234,7 +234,7 @@ const QuoteForm = () => {
                       value={formData.origem}
                       onChange={(e) => handleInputChange('origem', e.target.value)}
                       required
-                      className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
+                      className="mt-1 border-gray-300 focus:border-[#e52021] focus:ring-[#e52021]"
                       placeholder="Ex: São Paulo, SP"
                     />
                   </div>
@@ -246,7 +246,7 @@ const QuoteForm = () => {
                       value={formData.destino}
                       onChange={(e) => handleInputChange('destino', e.target.value)}
                       required
-                      className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
+                      className="mt-1 border-gray-300 focus:border-[#e52021] focus:ring-[#e52021]"
                       placeholder="Ex: Recife, PE"
                     />
                   </div>
@@ -275,7 +275,7 @@ const QuoteForm = () => {
                       step="0.01"
                       value={formData.m3}
                       onChange={(e) => handleInputChange('m3', e.target.value.replace(/[^0-9.,]/g, ''))}
-                      className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
+                      className="mt-1 border-gray-300 focus:border-[#e52021] focus:ring-[#e52021]"
                       placeholder="Ex: 4"
                     />
                   </div>
@@ -288,7 +288,7 @@ const QuoteForm = () => {
                       step="0.01"
                       value={formData.peso}
                       onChange={(e) => handleInputChange('peso', e.target.value.replace(/[^0-9.,]/g, ''))}
-                      className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
+                      className="mt-1 border-gray-300 focus:border-[#e52021] focus:ring-[#e52021]"
                       placeholder="Ex: 600"
                     />
                   </div>
@@ -300,7 +300,7 @@ const QuoteForm = () => {
                     id="observacoes"
                     value={formData.observacoes}
                     onChange={(e) => handleInputChange('observacoes', e.target.value)}
-                    className="mt-1 border-gray-300 focus:border-[#FF4E00] focus:ring-[#FF4E00]"
+                  className="mt-1 border-gray-300 focus:border-[#e52021] focus:ring-[#e52021]"
                     placeholder="Informe detalhes sobre sua carga, urgência, frequência de envio, etc."
                     rows={3}
                   />
@@ -312,7 +312,7 @@ const QuoteForm = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-[#FF4E00] hover:bg-[#FF4E00]/90 text-white py-4 text-lg font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200"
+                  className="w-full bg-[#e52021] hover:bg-[#e52021]/90 text-white py-4 text-lg font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200"
                   size="lg"
                 >
                   {isSubmitting ? (

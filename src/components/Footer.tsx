@@ -19,7 +19,7 @@ const Footer = () => {
           {/* Company Info – 5/12 col. */}
           <div className="md:col-span-5">
             <div className="flex items-center mb-4">
-              <Truck className="w-8 h-8 text-orange-500 mr-2" />
+              <Truck className="w-8 h-8 text-[#e52021] mr-2" />
               <span className="text-2xl font-bold">
                 Vem Transportadora
               </span>
@@ -33,26 +33,18 @@ const Footer = () => {
 
             {/* Certifications */}
             <div className="flex flex-wrap items-center gap-3 mb-6">
-              <span className="rounded bg-blue-600 px-3 py-1 text-sm">
-                ANTT
-              </span>
-              <span className="rounded bg-orange-500 px-3 py-1 text-sm">
-                RNTRC
-              </span>
-              <span className="rounded bg-yellow-500 px-3 py-1 text-sm">
-                Prêmio Excelência&nbsp;2023
-              </span>
+              <span className="rounded bg-blue-600 px-3 py-1 text-sm">ANTT</span>
+              <span className="rounded bg-[#e52021] px-3 py-1 text-sm">RNTRC</span>
+              <span className="rounded bg-yellow-500 px-3 py-1 text-sm">Prêmio Excelência&nbsp;2023</span>
             </div>
 
             {/* Trust Indicators */}
             <div className="flex items-center gap-6 text-sm text-gray-400">
               <span className="flex items-center">
-                <Star className="mr-1 h-4 w-4 text-yellow-500" />4.9/5
-                avaliação
+                <Star className="mr-1 h-4 w-4 text-yellow-500" />4.9/5 avaliação
               </span>
               <span className="flex items-center">
-                <Shield className="mr-1 h-4 w-4 text-green-500" />
-                Seguro incluso
+                <Shield className="mr-1 h-4 w-4 text-green-500" />Seguro incluso
               </span>
             </div>
           </div>
@@ -62,20 +54,20 @@ const Footer = () => {
             <h3 className="mb-4 text-xl font-semibold">Contato</h3>
             <ul className="space-y-3 text-gray-300">
               <li className="flex items-center">
-                <Phone className="mr-3 h-4 w-4 text-orange-500" />
+                <Phone className="mr-3 h-4 w-4 text-[#e52021]" />
                 (81)&nbsp;99440-5005
               </li>
               <li className="flex items-center">
-                <Mail className="mr-3 h-4 w-4 text-orange-500" />
+                <Mail className="mr-3 h-4 w-4 text-[#e52021]" />
                 comercial@vemtransport.com.br
               </li>
               <li className="flex items-start">
-                <MapPin className="mr-3 mt-0.5 h-4 w-4 text-orange-500" />
+                <MapPin className="mr-3 mt-0.5 h-4 w-4 text-[#e52021]" />
                 Av.&nbsp;da&nbsp;Bandeira,&nbsp;564,&nbsp;564<br />
                 Carpina&nbsp;-&nbsp;PE,&nbsp;55818-565
               </li>
               <li className="flex items-start">
-                <Clock className="mr-3 h-4 w-4 text-orange-500" />
+                <Clock className="mr-3 h-4 w-4 text-[#e52021]" />
                 Seg à Sex:&nbsp;8h – 18h<br />
                 Sáb:&nbsp;8h – 12h
               </li>
@@ -85,31 +77,17 @@ const Footer = () => {
           {/* Services & Routes – 3/12 col. */}
           <div className="md:col-span-3">
             <h3 className="mb-4 text-xl font-semibold">Nossos Serviços</h3>
-
             {/* Grade interna: 1 col. no mobile | 2 col. ≥ md */}
             <div className="grid gap-x-8 gap-y-6 md:grid-cols-2">
               <ul className="space-y-2 text-gray-300">
-                <li className="transition-colors hover:text-orange-500">
-                  Carga Fracionada
-                </li>
-                <li className="transition-colors hover:text-orange-500">
-                  Carga Lotação
-                </li>
-                <li className="transition-colors hover:text-orange-500">
-                  Transporte Expresso
-                </li>
-                <li className="transition-colors hover:text-orange-500">
-                  Logística Reversa
-                </li>
-                <li className="transition-colors hover:text-orange-500">
-                  Armazenagem
-                </li>
+                <li className="transition-colors hover:text-[#e52021]">Carga Fracionada</li>
+                <li className="transition-colors hover:text-[#e52021]">Carga Lotação</li>
+                <li className="transition-colors hover:text-[#e52021]">Transporte Expresso</li>
+                <li className="transition-colors hover:text-[#e52021]">Logística Reversa</li>
+                <li className="transition-colors hover:text-[#e52021]">Armazenagem</li>
               </ul>
-
               <div>
-                <h4 className="mb-3 text-lg font-semibold">
-                  Rotas Principais
-                </h4>
+                <h4 className="mb-3 text-lg font-semibold">Rotas Principais</h4>
                 <ul className="space-y-1 text-sm text-gray-400">
                   <li>SP → Recife</li>
                   <li>SP → Salvador</li>
@@ -129,15 +107,9 @@ const Footer = () => {
         <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 py-6 text-sm text-gray-400 md:flex-row">
           <span>© 2025 Vem Transportadora. Todos os direitos reservados.</span>
           <nav className="flex gap-6">
-            <a href="#" className="transition-colors hover:text-white">
-              Política de Privacidade
-            </a>
-            <a href="#" className="transition-colors hover:text-white">
-              Termos de Uso
-            </a>
-            <a href="#" className="transition-colors hover:text-white">
-              LGPD
-            </a>
+            <a href="#" className="transition-colors hover:text-white">Política de Privacidade</a>
+            <a href="#" className="transition-colors hover:text-white">Termos de Uso</a>
+            <a href="#" className="transition-colors hover:text-white">LGPD</a>
           </nav>
         </div>
       </div>

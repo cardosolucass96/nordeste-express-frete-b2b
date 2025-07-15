@@ -84,20 +84,20 @@ const Testimonials = () => {
         
         {/* Trust Indicators */}
         <div className="mt-16 text-center">
-          <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-orange-100 px-8 py-4 rounded-full">
+            <div className="inline-flex items-center bg-gradient-to-r from-[#e52021]/20 via-[#e52021]/30 to-[#e52021]/40 px-8 py-4 rounded-full">
             <div className="flex items-center space-x-6">
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">4.9/5</div>
+                <div className="text-2xl font-bold text-[#1f1f3e]">4.9/5</div>
                 <div className="text-sm text-gray-600">Avaliação Média</div>
               </div>
               <div className="w-px h-8 bg-gray-300"></div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-orange-600">98%</div>
+                <div className="text-2xl font-bold text-[#1f1f3e]">98%</div>
                 <div className="text-sm text-gray-600">Entregas no Prazo</div>
               </div>
               <div className="w-px h-8 bg-gray-300"></div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-green-600">500+</div>
+                <div className="text-2xl font-bold text-[#1f1f3e]">500+</div>
                 <div className="text-sm text-gray-600">Clientes Satisfeitos</div>
               </div>
             </div>

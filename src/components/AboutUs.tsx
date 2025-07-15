@@ -30,8 +30,8 @@ const AboutUs = () => {
               com integridade, honestidade e respeito mútuo.
             </p>
             <div className="flex items-center justify-center space-x-4">
-              <div className="bg-red-100 p-3 rounded-full">
-                <Award className="w-6 h-6 text-red-600" />
+              <div className="bg-[#e52021]/10 p-3 rounded-full">
+                <Award className="w-6 h-6 text-[#e52021]" />
               </div>
               <div>
                 <div className="font-semibold text-gray-900">10+ Anos de Experiência</div>

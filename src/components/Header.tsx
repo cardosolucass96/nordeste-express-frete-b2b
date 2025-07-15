@@ -27,31 +27,31 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('home')}
-              className="text-gray-700 hover:text-red-600 font-medium transition-colors"
+              className="text-gray-700 hover:text-[#e52021] font-medium transition-colors"
             >
               Home
             </button>
             <button 
               onClick={() => scrollToSection('quem-somos')}
-              className="text-gray-700 hover:text-red-600 font-medium transition-colors"
+              className="text-gray-700 hover:text-[#e52021] font-medium transition-colors"
             >
               Quem Somos
             </button>
             <button 
               onClick={() => scrollToSection('how-it-works')}
-              className="text-gray-700 hover:text-red-600 font-medium transition-colors"
+              className="text-gray-700 hover:text-[#e52021] font-medium transition-colors"
             >
               Serviços
             </button>
             <button 
               onClick={() => scrollToSection('contato')}
-              className="text-gray-700 hover:text-red-600 font-medium transition-colors"
+              className="text-gray-700 hover:text-[#e52021] font-medium transition-colors"
             >
               Contato
             </button>
             <Button 
               onClick={() => scrollToSection('cotacao')}
-              className="bg-red-600 hover:bg-red-700 text-white"
+              className="bg-[#e52021] hover:bg-[#e52021]/90 text-white"
             >
               Solicitar Orçamento
             </Button>
@@ -72,31 +72,31 @@ const Header = () => {
             <nav className="flex flex-col space-y-4">
               <button 
                 onClick={() => scrollToSection('home')}
-                className="text-gray-700 hover:text-red-600 font-medium text-left"
+                className="text-gray-700 hover:text-[#e52021] font-medium text-left"
               >
                 Home
               </button>
               <button 
                 onClick={() => scrollToSection('quem-somos')}
-                className="text-gray-700 hover:text-red-600 font-medium text-left"
+                className="text-gray-700 hover:text-[#e52021] font-medium text-left"
               >
                 Quem Somos
               </button>
               <button 
                 onClick={() => scrollToSection('how-it-works')}
-                className="text-gray-700 hover:text-red-600 font-medium text-left"
+                className="text-gray-700 hover:text-[#e52021] font-medium text-left"
               >
                 Serviços
               </button>
               <button 
                 onClick={() => scrollToSection('contato')}
-                className="text-gray-700 hover:text-red-600 font-medium text-left"
+                className="text-gray-700 hover:text-[#e52021] font-medium text-left"
               >
                 Contato
               </button>
               <Button 
                 onClick={() => scrollToSection('cotacao')}
-                className="bg-red-600 hover:bg-red-700 text-white w-full"
+                className="bg-[#e52021] hover:bg-[#e52021]/90 text-white w-full"
               >
                 Solicitar
               </Button>

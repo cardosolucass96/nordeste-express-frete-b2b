@@ -18,8 +18,8 @@ const HowItWorks = () => {
           {/* Carga Fracionada */}
           <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <div className="flex items-center mb-6">
-              <div className="bg-blue-100 p-4 rounded-full mr-4">
-                <Package className="w-8 h-8 text-blue-600" />
+              <div className="bg-[#e52021]/10 p-4 rounded-full mr-4">
+                <Package className="w-8 h-8 text-[#e52021]" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900">Carga Fracionada</h3>
             </div>
@@ -31,15 +31,15 @@ const HowItWorks = () => {
             
             <div className="space-y-4">
               <div className="flex items-start">
-                <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3"></div>
+                <div className="w-2 h-2 bg-[#e52021] rounded-full mt-2 mr-3"></div>
                 <span className="text-gray-700">Frete calculado por peso ou metro cúbico</span>
               </div>
               <div className="flex items-start">
-                <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3"></div>
+                <div className="w-2 h-2 bg-[#e52021] rounded-full mt-2 mr-3"></div>
                 <span className="text-gray-700">Economia de até 40% no frete</span>
               </div>
               <div className="flex items-start">
-                <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3"></div>
+                <div className="w-2 h-2 bg-[#e52021] rounded-full mt-2 mr-3"></div>
                 <span className="text-gray-700">Coletas programadas 3x por semana</span>
               </div>
             </div>
@@ -48,8 +48,8 @@ const HowItWorks = () => {
           {/* Carga Lotação */}
           <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <div className="flex items-center mb-6">
-              <div className="bg-orange-100 p-4 rounded-full mr-4">
-                <Truck className="w-8 h-8 text-orange-600" />
+              <div className="bg-[#e52021]/10 p-4 rounded-full mr-4">
+                <Truck className="w-8 h-8 text-[#e52021]" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900">Carga Lotação</h3>
             </div>
@@ -61,15 +61,15 @@ const HowItWorks = () => {
             
             <div className="space-y-4">
               <div className="flex items-start">
-                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></div>
+                <div className="w-2 h-2 bg-[#e52021] rounded-full mt-2 mr-3"></div>
                 <span className="text-gray-700">Frete calculado por peso ou metro cúbico</span>
               </div>
               <div className="flex items-start">
-                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></div>
+                <div className="w-2 h-2 bg-[#e52021] rounded-full mt-2 mr-3"></div>
                 <span className="text-gray-700">Caminhão exclusivo para sua carga</span>
               </div>
               <div className="flex items-start">
-                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></div>
+                <div className="w-2 h-2 bg-[#e52021] rounded-full mt-2 mr-3"></div>
                 <span className="text-gray-700">Coleta e entrega sob demanda</span>
               </div>
             </div>
@@ -84,7 +84,7 @@ const HowItWorks = () => {
           
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-[#e52021] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">1</span>
               </div>
               <h4 className="font-semibold text-gray-900 mb-2">Solicite Cotação</h4>
@@ -92,7 +92,7 @@ const HowItWorks = () => {
             </div>
             
             <div className="text-center">
-              <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-[#e52021] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-6 h-6 text-white" />
               </div>
               <h4 className="font-semibold text-gray-900 mb-2">Orçamento Rápido</h4>
@@ -100,7 +100,7 @@ const HowItWorks = () => {
             </div>
             
             <div className="text-center">
-              <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-[#e52021] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Truck className="w-6 h-6 text-white" />
               </div>
               <h4 className="font-semibold text-gray-900 mb-2">Coleta Agendada</h4>
@@ -108,7 +108,7 @@ const HowItWorks = () => {
             </div>
             
             <div className="text-center">
-              <div className="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-[#e52021] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-6 h-6 text-white" />
               </div>
               <h4 className="font-semibold text-gray-900 mb-2">Entrega Segura</h4>
