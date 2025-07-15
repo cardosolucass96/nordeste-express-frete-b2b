@@ -85,12 +85,12 @@ const FAQ = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="https://wa.me/5581996405005" 
+                href="https://wa.me/5581994405005" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
               >
-                WhatsApp: (81) 99640-5005
+                WhatsApp: (81) 99440-5005
               </a>
               <a 
                 href="mailto:comercial@vemtransportadora.com.br"

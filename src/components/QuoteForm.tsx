@@ -334,7 +334,7 @@ const QuoteForm = () => {
           
           {/* Post-form CTA */}
           <div className="mt-8 text-center text-white">
-            <p className="text-[#1f1f3e]/80 mb-4">
+            <p className="text-[#fffff]/80 mb-4">
               Precisa falar conosco agora? Chame no WhatsApp:
             </p>
             <Button
@@ -344,11 +344,11 @@ const QuoteForm = () => {
               asChild
             >
               <a
-                href="https://wa.me/5581996405005?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20a%20Vem%20Transportadora"
+                href="https://wa.me/558194405005?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20a%20Vem%20Transportadora"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                (81) 99640-5005
+                (81) 99440-5005
               </a>
             </Button>
           </div>
